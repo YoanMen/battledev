@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <title>Ma Terre</title>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn--dark">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none">
+            <circle cx="12" cy="12" r="8.5" stroke="currentColor" />
+            <path
+              fill="currentColor"
+              d="M16.243 7.757a6 6 0 1 0-8.486 8.486L12 12z"
+            />
+          </g>
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="login">
+        <form class="login__form" action="POST">
+          <h1>Connexion</h1>
+
+          <label class="login__input" for="email">
+            adresse email
+            <input id="email" type="email" />
+          </label>
+          <label class="login__input" for="password">
+            mot de passe
+            <input id="password" type="password" />
+          </label>
+          <input
+            disabled
+            id="submit"
+            class="btn"
+            type="button"
+            value="se connecter"
+          />
+        </form>
+      </section>
+    </main>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

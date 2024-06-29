@@ -1,0 +1,141 @@
+@import url("./reset.css");
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #fbfefb;
+  --secondary-color: #4ea956;
+  --btn-color: #4ea956;
+  --border-color: #afdfb0;
+  --input-color: #e7f7e7;
+  --secondary-text-color: #20802f;
+  --text-color: black;
+  --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
+
+header {
+  position: absolute;
+  right: 0;
+}
+h1 {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 1.8rem;
+}
+p,
+input {
+  font-family: var(--font-open-sans);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  min-height: 800px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  width: 100%;
+  padding: 16px;
+}
+
+.login__input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.login__input input {
+  height: 40px;
+  border-style: none;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-color);
+  border-radius: 10px;
+  padding: 0px 8px;
+  font-size: 1rem;
+}
+
+.login__input label {
+  font-family: var(--font-raleway);
+}
+
+.btn {
+  cursor: pointer;
+  height: 60px;
+  background-color: var(--btn-color);
+  color: white;
+  border-style: none;
+
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.btn:hover:not(:disabled) {
+  background-color: #4ba152;
+}
+
+.btn:active:not(:disabled) {
+  background-color: #47994e;
+}
+
+.btn--dark {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  border-style: none;
+  justify-content: center;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 36px;
+  color: var(--btn-color);
+}
+
+.btn--dark:hover {
+  color: #4ba152;
+}
+
+.btn--dark:active {
+  color: #47994e;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.light-mode {
+  --bg-color: #151615;
+  --secondary-color: #282e29;
+  --btn-color: #111d12;
+  --border-color: #151b15;
+  --input-color: #3f443f;
+  --secondary-text-color: #113f17;
+  --text-color: white;
+}
